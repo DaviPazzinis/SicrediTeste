@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.DetailActivity"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark">
+
+        <net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolBarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/blue200"
+            app:expandedTitleMargin="15dp"
+            app:expandedTitleMarginBottom="20dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:maxLines="3">
+            
+            <ImageView
+                android:id="@+id/imageView_detail_eventImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="a"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_error_loading"
+                app:layout_collapseMode="parallax" />
+            
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/Platform.MaterialComponents.Light"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/title_background_degrade"/>
+
+        </net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/description"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#212121"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_Detail_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_text"
+                android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="#212121"
+                    android:layout_gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_detail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/detail_date"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/textView_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/detail_price"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_alignParentEnd="true"/>
+
+
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView_detail_localization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="@string/local"
+                        android:textColor="#212121"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_alignParentEnd="true"/>
+
+                    <TextView
+                        android:id="@+id/textView_detail_coordenates"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="5sp"
+                        android:text="@string/textView_detail_coordenates"
+                        android:textColor="#212121"
+                        android:textStyle=""
+                        android:textSize="11sp"
+                        android:layout_alignParentEnd="true"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/map"
+                    tools:context=".MapsActivity"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+                <ImageView
+                    android:id="@+id/transparent_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@android:color/transparent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_detail_shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/share_icon"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|end|right"
+        android:layout_marginEnd="15dp"
+        android:tint="@color/white"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_detail_checkInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/check_icon"
+        app:layout_anchor="@id/appBarLayout"
+        app:layout_anchorGravity="bottom|end|right"
+        android:layout_marginEnd="80dp"
+        android:tint="@color/white"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
