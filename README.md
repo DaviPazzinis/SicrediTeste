@@ -1,4 +1,4 @@
-# SicrediTeste
+# SicrediTeste 
 
 ## Intro
 
@@ -14,5 +14,9 @@
 
 ## Estrutura
 #### - MVC arquitetura de Modelo-Visão-Controle - MVC, é um padrão de projeto de software
+![MVC Logo](https://github.com/DaviPazzinis/SicrediTeste/blob/master/app/src/main/res/imagem/mvc.png)
+
+## App
+![APP Logo](https://github.com/DaviPazzinis/SicrediTeste/blob/master/app/src/main/res/imagem/running.png)
 
 
