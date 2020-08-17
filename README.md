@@ -2,16 +2,17 @@
 
 ## Intro
 
+### - Aplicação comsumindo um API Rest colocando em um ListView clicavel aonde abre tela sobre que contem Informações Detalhadas / Localização no Google Maps / Botões de interação como Share e CheckIn, fazendo o evento de POST!
+
 ## Bibliotecas
-### - Collapsingtoolbar
+### - CollapsingToolbar
 ### - Glide
-### - Tetrofit
+### - Retrofit
 ### - RecyclerView
 ### - Play Services Maps
 ### - Play Services Location
 
 ## Estrutura
-### - MVC arquitetura de Modelo-Visão-Controle - MVC, é um padrão de projeto de software
+#### - MVC arquitetura de Modelo-Visão-Controle - MVC, é um padrão de projeto de software
 
-(https://lh3.googleusercontent.com/proxy/lN8iU81klwv72-HNtha34uh-vShX1MKyyLvlYA-0ssEG4SCrqZMyiHcegnVBL0vpZeePUmKLH24fTXtFN_hmBjMRcwOZug)
 
